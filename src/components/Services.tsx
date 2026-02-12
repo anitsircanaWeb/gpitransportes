@@ -1,12 +1,12 @@
-import { Truck, Package, Clock, ShieldCheck, MapPin, BarChart3 } from "lucide-react";
+import { Bus, Users, Clock, ShieldCheck, MapPin, CalendarCheck } from "lucide-react";
 
 const services = [
-  { icon: Truck, title: "Carga Completa", desc: "Transporte dedicado para cargas completas con seguimiento en tiempo real." },
-  { icon: Package, title: "Paquetería", desc: "Envíos de paquetería con tiempos de entrega garantizados." },
-  { icon: Clock, title: "Entregas Express", desc: "Servicio urgente con entregas en el mismo día o al siguiente." },
-  { icon: ShieldCheck, title: "Carga Asegurada", desc: "Cobertura total de seguro para proteger tu mercancía." },
-  { icon: MapPin, title: "Cobertura Nacional", desc: "Red de distribución a lo largo de todo el país." },
-  { icon: BarChart3, title: "Logística Integral", desc: "Gestión completa de almacenaje, inventario y distribución." },
+  { icon: Bus, title: "Rutas Empresariales", desc: "Diseñamos rutas personalizadas para el traslado diario de tu personal desde y hacia tu empresa." },
+  { icon: Users, title: "Transporte Ejecutivo", desc: "Camionetas equipadas con aire acondicionado y asientos cómodos para viajes corporativos." },
+  { icon: Clock, title: "Puntualidad Garantizada", desc: "Cumplimos con los horarios establecidos para que tu operación nunca se detenga." },
+  { icon: ShieldCheck, title: "Seguridad Total", desc: "Unidades con GPS, seguro de pasajeros y conductores capacitados y certificados." },
+  { icon: MapPin, title: "Cobertura Metropolitana", desc: "Servicio en toda la zona metropolitana y rutas interurbanas cercanas." },
+  { icon: CalendarCheck, title: "Servicio Programado", desc: "Contratos mensuales con horarios fijos o servicio especial por evento." },
 ];
 
 const Services = () => {
@@ -16,10 +16,10 @@ const Services = () => {
         <div className="text-center mb-16">
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">Servicios</span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mt-3 text-foreground">
-            Soluciones de transporte a tu medida
+            Transporte de personal confiable
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Ofrecemos una amplia gama de servicios logísticos diseñados para satisfacer las necesidades de tu empresa.
+            Camionetas modernas y equipadas para trasladar a tu equipo de trabajo con comodidad y seguridad.
           </p>
         </div>
 

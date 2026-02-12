@@ -16,10 +16,10 @@ const Contact = () => {
         <div className="text-center mb-14">
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">Contacto</span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mt-3 text-foreground">
-            ¿Listo para enviar tu carga?
+            ¿Necesitas transporte para tu equipo?
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Contáctanos y recibe una cotización personalizada en menos de 24 horas.
+            Contáctanos y recibe una cotización personalizada para el traslado de tu personal.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ const Contact = () => {
             />
             <textarea
               rows={4}
-              placeholder="Describe tu necesidad de transporte..."
+              placeholder="Describe tu necesidad de transporte de personal..."
               required
               className="w-full px-4 py-3 rounded-md bg-muted border border-border text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
             />

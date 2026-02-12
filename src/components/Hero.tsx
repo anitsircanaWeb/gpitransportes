@@ -3,9 +3,9 @@ import heroImg from "@/assets/hero-transport.jpg";
 const Hero = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center">
-      <img
+        <img
         src={heroImg}
-        alt="Flota de transporte en carretera"
+        alt="Camionetas de transporte de personal"
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
       />
@@ -14,15 +14,15 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 pt-20">
         <div className="max-w-2xl animate-fade-up">
           <span className="inline-block gradient-orange text-primary-foreground text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-6">
-            Transporte & Logística
+            Transporte de Personal
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6">
-            Movemos tu carga{" "}
+            Trasladamos a tu equipo{" "}
             <span className="text-gradient">con seguridad</span>
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl max-w-lg mb-8 leading-relaxed">
-            Soluciones logísticas integrales con cobertura nacional.
-            Rapidez, confianza y tecnología al servicio de tu negocio.
+            Servicio de transporte de personal en camionetas equipadas.
+            Puntualidad, comodidad y seguridad para tu empresa.
           </p>
           <div className="flex flex-wrap gap-4">
             <a

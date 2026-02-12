@@ -1,8 +1,8 @@
 const stats = [
   { value: "15+", label: "Años de Experiencia" },
-  { value: "500+", label: "Clientes Satisfechos" },
-  { value: "10K+", label: "Envíos Mensuales" },
-  { value: "99%", label: "Entregas a Tiempo" },
+  { value: "200+", label: "Empresas Atendidas" },
+  { value: "50+", label: "Camionetas en Flota" },
+  { value: "99%", label: "Puntualidad" },
 ];
 
 const Stats = () => {
@@ -12,10 +12,10 @@ const Stats = () => {
         <div className="text-center mb-14">
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">Sobre Nosotros</span>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mt-3 text-secondary-foreground">
-            Líderes en transporte y logística
+            Expertos en transporte de personal
           </h2>
           <p className="text-secondary-foreground/70 mt-4 max-w-xl mx-auto">
-            Con más de una década de experiencia, somos tu socio confiable para mover tu mercancía de forma segura y eficiente.
+            Con más de una década trasladando equipos de trabajo, somos tu socio confiable en movilidad corporativa.
           </p>
         </div>
 
