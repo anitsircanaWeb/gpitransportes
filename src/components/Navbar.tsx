@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu, X, Truck } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -8,9 +9,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-secondary-foreground/10">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="#" className="flex items-center gap-2 text-primary-foreground font-heading text-xl font-bold">
-          <Truck className="w-7 h-7 text-primary" />
-          <span>TransLogix</span>
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="GPI Transportes Empresariales" className="h-10" />
         </a>
 
         {/* Desktop */}
