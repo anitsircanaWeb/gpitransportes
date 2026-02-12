@@ -41,7 +41,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-foreground">Correo</h4>
-                <p className="text-muted-foreground text-sm">contacto@translogix.com</p>
+                <p className="text-muted-foreground text-sm">ventas@gpitransportes.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
