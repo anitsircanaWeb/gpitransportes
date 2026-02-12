@@ -50,7 +50,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-heading font-semibold text-foreground">Dirección</h4>
-                <p className="text-muted-foreground text-sm">Av. Industria #456, Col. Centro, CDMX</p>
+                <p className="text-muted-foreground text-sm">Bernardo de Balbuena 704, Col. Ladrón de Guevara C.P. 44600 Guadalajara, Jalisco, México</p>
               </div>
             </div>
           </div>
