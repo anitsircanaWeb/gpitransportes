@@ -19,7 +19,7 @@ const Stats = () => {
             Expertos en transporte de personal
           </h2>
           <p className="text-secondary-foreground/70 mt-4 max-w-xl mx-auto">
-            Con más de una década trasladando equipos de trabajo, somos tu socio confiable en movilidad corporativa.
+            Brindamos soluciones de movilidad seguras, eficientes y puntuales, garantizando la satisfacción y tranquilidad de nuestros clientes.
           </p>
         </div>
 
