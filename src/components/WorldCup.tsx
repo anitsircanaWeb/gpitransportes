@@ -1,10 +1,10 @@
 import { Trophy, MapPin, Users, Clock } from "lucide-react";
 
 const matches = [
-  { date: "Jueves 11 de junio", time: "8:00 PM", team1: "Corea del Sur", team2: "Repechaje UEFA" },
-  { date: "Miércoles 18 de junio", time: "7:00 PM", team1: "México", team2: "Corea del Sur" },
-  { date: "Martes 23 de junio", time: "8:00 PM", team1: "Colombia", team2: "Repechaje Intercontinental" },
-  { date: "Viernes 26 de junio", time: "6:00 PM", team1: "Uruguay", team2: "España" },
+  { date: "Jueves 11 de junio", time: "8:00 PM", team1: "🇰🇷 Corea del Sur", team2: "Repechaje UEFA 🏳️" },
+  { date: "Miércoles 18 de junio", time: "7:00 PM", team1: "🇲🇽 México", team2: "Corea del Sur 🇰🇷" },
+  { date: "Martes 23 de junio", time: "8:00 PM", team1: "🇨🇴 Colombia", team2: "Repechaje Intercontinental 🏳️" },
+  { date: "Viernes 26 de junio", time: "6:00 PM", team1: "🇺🇾 Uruguay", team2: "España 🇪🇸" },
 ];
 
 const features = ["Traslado redondo al estadio", "Capacidad hasta 20 pasajeros", "Aire acondicionado", "Salida desde punto acordado", "Paradas intermedias incluidas", "Conductor bilingüe disponible"];
