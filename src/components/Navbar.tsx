@@ -4,7 +4,7 @@ import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const links = ["Inicio", "Servicios", "Nosotros", "Contacto"];
+  const links = ["Inicio", "Servicios", "Mundialistas", "Nosotros", "Contacto"];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-secondary-foreground/10">
