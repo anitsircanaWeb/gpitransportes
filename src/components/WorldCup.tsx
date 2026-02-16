@@ -2,7 +2,7 @@ import { Trophy, MapPin, Users, Clock } from "lucide-react";
 
 const packages = [
   {
-    city: "Ciudad de México",
+    city: "Guadalajara",
     stadium: "Estadio Azteca",
     price: "Desde $2,500 MXN",
     features: ["Traslado redondo al estadio", "Capacidad hasta 14 pasajeros", "Aire acondicionado", "Salida desde punto acordado"],
@@ -34,7 +34,7 @@ const WorldCup = () => {
             Traslados Mundialistas
           </h2>
           <p className="text-secondary-foreground/70 mt-4 max-w-2xl mx-auto">
-            Llega a los partidos del Mundial 2026 en México con comodidad y seguridad. Paquetes de transporte grupal a las sedes oficiales.
+            Llega a los partidos del Mundial 2026 en Guadalajara con comodidad y seguridad. Paquetes de transporte grupal a las sedes oficiales.
           </p>
         </div>
 
