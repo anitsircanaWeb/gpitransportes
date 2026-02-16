@@ -3,21 +3,8 @@ import { Trophy, MapPin, Users, Clock } from "lucide-react";
 const packages = [
   {
     city: "Guadalajara",
-    stadium: "Estadio Azteca",
-    price: "Desde $2,500 MXN",
-    features: ["Traslado redondo al estadio", "Capacidad hasta 14 pasajeros", "Aire acondicionado", "Salida desde punto acordado"],
-  },
-  {
-    city: "Guadalajara",
     stadium: "Estadio Akron",
-    price: "Desde $8,500 MXN",
-    features: ["Viaje redondo GDL - Estadio", "Capacidad hasta 20 pasajeros", "Paradas intermedias incluidas", "Conductor bilingüe disponible"],
-  },
-  {
-    city: "Monterrey",
-    stadium: "Estadio BBVA",
-    price: "Desde $12,000 MXN",
-    features: ["Traslado completo ida y vuelta", "Capacidad hasta 20 pasajeros", "Unidades con WiFi", "Coordinación de horarios FIFA"],
+    features: ["Traslado redondo al estadio", "Capacidad hasta 20 pasajeros", "Aire acondicionado", "Salida desde punto acordado", "Paradas intermedias incluidas", "Conductor bilingüe disponible"],
   },
 ];
 
@@ -38,7 +25,7 @@ const WorldCup = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="max-w-md mx-auto">
           {packages.map((pkg, i) => (
             <div
               key={i}
@@ -53,7 +40,6 @@ const WorldCup = () => {
               </div>
 
               <div className="p-6 flex-1 flex flex-col">
-                <p className="text-2xl font-heading font-bold text-card-foreground mb-6">{pkg.price}</p>
 
                 <ul className="space-y-3 flex-1">
                   {pkg.features.map((f, j) => (
