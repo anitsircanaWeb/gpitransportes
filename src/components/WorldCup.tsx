@@ -1,12 +1,13 @@
 import { Trophy, MapPin, Users, Clock } from "lucide-react";
 
-const packages = [
-  {
-    city: "Guadalajara",
-    stadium: "Estadio Akron",
-    features: ["Traslado redondo al estadio", "Capacidad hasta 20 pasajeros", "Aire acondicionado", "Salida desde punto acordado", "Paradas intermedias incluidas", "Conductor bilingüe disponible"],
-  },
+const matches = [
+  { date: "Jueves 11 de junio", time: "8:00 PM", teams: "Corea del Sur vs Repechaje UEFA" },
+  { date: "Miércoles 18 de junio", time: "7:00 PM", teams: "México vs Corea del Sur" },
+  { date: "Martes 23 de junio", time: "8:00 PM", teams: "Colombia vs Repechaje Intercontinental" },
+  { date: "Viernes 26 de junio", time: "6:00 PM", teams: "Uruguay vs España" },
 ];
+
+const features = ["Traslado redondo al estadio", "Capacidad hasta 20 pasajeros", "Aire acondicionado", "Salida desde punto acordado", "Paradas intermedias incluidas", "Conductor bilingüe disponible"];
 
 const WorldCup = () => {
   return (
@@ -25,39 +26,47 @@ const WorldCup = () => {
           </p>
         </div>
 
-        <div className="max-w-md mx-auto">
-          {packages.map((pkg, i) => (
-            <div
-              key={i}
-              className="bg-card rounded-xl border border-border overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col"
-            >
-              <div className="gradient-orange p-6 text-primary-foreground">
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5" />
-                  <span className="font-semibold text-lg">Traslado a Estadio Akron</span>
-                </div>
-              </div>
-
-              <div className="p-6 flex-1 flex flex-col">
-
-                <ul className="space-y-3 flex-1">
-                  {pkg.features.map((f, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-
-                <a
-                  href="#contacto"
-                  className="mt-6 block text-center gradient-orange text-primary-foreground px-5 py-3 rounded-md text-sm font-semibold hover:opacity-90 transition"
-                >
-                  Reservar Traslado
-                </a>
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-card rounded-xl border border-border overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col">
+            <div className="gradient-orange p-6 text-primary-foreground">
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5" />
+                <span className="font-semibold text-lg">Traslado a Estadio Akron</span>
               </div>
             </div>
-          ))}
+
+            <div className="p-6 flex-1 flex flex-col">
+              <h3 className="font-semibold text-secondary-foreground mb-4">Partidos en Guadalajara</h3>
+              <div className="space-y-3 mb-6">
+                {matches.map((match, i) => (
+                  <div key={i} className="flex items-center justify-between border-b border-border pb-3 last:border-0 last:pb-0">
+                    <div>
+                      <p className="text-sm font-medium text-secondary-foreground">{match.teams}</p>
+                      <p className="text-xs text-muted-foreground">{match.date}</p>
+                    </div>
+                    <span className="text-xs font-semibold bg-primary/10 text-primary px-2 py-1 rounded">{match.time}</span>
+                  </div>
+                ))}
+              </div>
+
+              <h3 className="font-semibold text-secondary-foreground mb-3">Incluye</h3>
+              <ul className="space-y-3 flex-1">
+                {features.map((f, j) => (
+                  <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="#contacto"
+                className="mt-6 block text-center gradient-orange text-primary-foreground px-5 py-3 rounded-md text-sm font-semibold hover:opacity-90 transition"
+              >
+                Reservar Traslado
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="mt-12 flex flex-wrap justify-center gap-8 text-secondary-foreground/60 text-sm">
