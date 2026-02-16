@@ -44,9 +44,9 @@ const WorldCup = () => {
 
               <div className="p-5 flex-1 flex flex-col">
                 <div className="flex items-center justify-center gap-3 mb-2">
-                  <span className="text-xl md:text-2xl font-heading font-bold text-secondary-foreground">{match.team1}</span>
-                  <span className="text-sm font-semibold text-primary">vs</span>
-                  <span className="text-xl md:text-2xl font-heading font-bold text-secondary-foreground">{match.team2}</span>
+                  <span className="text-xl md:text-2xl font-heading font-bold text-primary">{match.team1}</span>
+                  <span className="text-sm font-semibold text-secondary-foreground">vs</span>
+                  <span className="text-xl md:text-2xl font-heading font-bold text-primary">{match.team2}</span>
                 </div>
                 <p className="text-xs text-muted-foreground mb-4 text-center">{match.date}</p>
 
