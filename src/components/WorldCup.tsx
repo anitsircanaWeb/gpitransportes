@@ -45,12 +45,12 @@ const WorldCup = () => {
               <div className="p-5 flex-1 flex flex-col">
                 <div className="flex items-center justify-center gap-4 mb-2">
                   <div className="flex flex-col items-center gap-1">
-                    {match.flag1 && <img src={`https://flagcdn.com/w40/${match.flag1}.png`} alt={match.team1} className="w-10 h-7 object-cover rounded-sm" />}
+                    {match.flag1 ? <img src={`https://flagcdn.com/w40/${match.flag1}.png`} alt={match.team1} className="w-10 h-7 object-cover rounded-sm" /> : <Trophy className="w-10 h-7 text-orange-500" />}
                     <span className="text-lg md:text-xl font-heading font-bold text-orange-500">{match.team1}</span>
                   </div>
                   <span className="text-sm font-semibold text-orange-500">vs</span>
                   <div className="flex flex-col items-center gap-1">
-                    {match.flag2 && <img src={`https://flagcdn.com/w40/${match.flag2}.png`} alt={match.team2} className="w-10 h-7 object-cover rounded-sm" />}
+                    {match.flag2 ? <img src={`https://flagcdn.com/w40/${match.flag2}.png`} alt={match.team2} className="w-10 h-7 object-cover rounded-sm" /> : <Trophy className="w-10 h-7 text-orange-500" />}
                     <span className="text-lg md:text-xl font-heading font-bold text-orange-500">{match.team2}</span>
                   </div>
                 </div>
