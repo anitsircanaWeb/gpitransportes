@@ -26,47 +26,44 @@ const WorldCup = () => {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-card rounded-xl border border-border overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col">
-            <div className="gradient-orange p-6 text-primary-foreground">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-5 h-5" />
-                <span className="font-semibold text-lg">Traslado a Estadio Akron</span>
-              </div>
-            </div>
-
-            <div className="p-6 flex-1 flex flex-col">
-              <h3 className="font-semibold text-secondary-foreground mb-4">Partidos en Guadalajara</h3>
-              <div className="space-y-3 mb-6">
-                {matches.map((match, i) => (
-                  <div key={i} className="flex items-center justify-between border-b border-border pb-3 last:border-0 last:pb-0">
-                    <div>
-                      <p className="text-sm font-medium text-secondary-foreground">{match.teams}</p>
-                      <p className="text-xs text-muted-foreground">{match.date}</p>
-                    </div>
-                    <span className="text-xs font-semibold bg-primary/10 text-primary px-2 py-1 rounded">{match.time}</span>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {matches.map((match, i) => (
+            <div
+              key={i}
+              className="bg-card rounded-xl border border-border overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col"
+            >
+              <div className="gradient-orange p-4 text-primary-foreground">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span className="font-semibold text-sm">Estadio Akron</span>
                   </div>
-                ))}
+                  <span className="text-xs bg-primary-foreground/20 px-2 py-0.5 rounded">{match.time}</span>
+                </div>
               </div>
 
-              <h3 className="font-semibold text-secondary-foreground mb-3">Incluye</h3>
-              <ul className="space-y-3 flex-1">
-                {features.map((f, j) => (
-                  <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
+              <div className="p-5 flex-1 flex flex-col">
+                <p className="font-bold text-secondary-foreground text-lg mb-1">{match.teams}</p>
+                <p className="text-xs text-muted-foreground mb-4">{match.date}</p>
 
-              <a
-                href="#contacto"
-                className="mt-6 block text-center gradient-orange text-primary-foreground px-5 py-3 rounded-md text-sm font-semibold hover:opacity-90 transition"
-              >
-                Reservar Traslado
-              </a>
+                <ul className="space-y-2 flex-1">
+                  {features.map((f, j) => (
+                    <li key={j} className="flex items-start gap-2 text-xs text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1 shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="#contacto"
+                  className="mt-4 block text-center gradient-orange text-primary-foreground px-4 py-2.5 rounded-md text-sm font-semibold hover:opacity-90 transition"
+                >
+                  Reservar Traslado
+                </a>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
 
         <div className="mt-12 flex flex-wrap justify-center gap-8 text-secondary-foreground/60 text-sm">
