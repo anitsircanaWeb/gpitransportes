@@ -1,4 +1,4 @@
-import { Bus, Users, Clock, ShieldCheck, MapPin, CalendarCheck, Palmtree } from "lucide-react";
+import { Bus, Users, Clock, ShieldCheck, MapPin, CalendarCheck, Palmtree, Plane } from "lucide-react";
 
 const services = [
   { icon: Bus, title: "Rutas Empresariales", desc: "Diseñamos rutas personalizadas para el traslado diario de tu personal desde y hacia tu empresa." },
@@ -8,6 +8,7 @@ const services = [
   { icon: MapPin, title: "Cobertura Metropolitana", desc: "Servicio en toda la zona metropolitana y rutas interurbanas cercanas." },
   { icon: CalendarCheck, title: "Servicio Programado", desc: "Contratos mensuales con horarios fijos o servicio especial por evento." },
   { icon: Palmtree, title: "Paquetes Turísticos Personalizados", desc: "Organizamos viajes turísticos a la medida con transporte cómodo y seguro para grupos." },
+  { icon: Plane, title: "Traslados al Aeropuerto", desc: "Servicio de transporte puntual y confiable desde y hacia el aeropuerto para tu equipo o ejecutivos." },
 ];
 
 const Services = () => {
