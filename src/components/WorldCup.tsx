@@ -69,9 +69,14 @@ const WorldCup = () => {
                   ))}
                 </ul>
 
+                <div className="mt-4 bg-accent/50 border border-accent rounded-lg p-3 text-center">
+                  <p className="text-xs font-semibold text-accent-foreground mb-1">🎉 ¡Personaliza tu experiencia!</p>
+                  <p className="text-xs text-muted-foreground">Agrega actividades o tours antes o después del partido</p>
+                </div>
+
                 <a
                   href="#contacto"
-                  className="mt-4 block text-center gradient-orange text-primary-foreground px-4 py-2.5 rounded-md text-sm font-semibold hover:opacity-90 transition"
+                  className="mt-3 block text-center gradient-orange text-primary-foreground px-4 py-2.5 rounded-md text-sm font-semibold hover:opacity-90 transition"
                 >
                   Reservar Traslado
                 </a>
