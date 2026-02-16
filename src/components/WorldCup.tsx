@@ -48,7 +48,7 @@ const WorldCup = () => {
                   <span className="text-sm font-semibold text-orange-500">vs</span>
                   <span className="text-xl md:text-2xl font-heading font-bold text-orange-500">{match.team2}</span>
                 </div>
-                <p className="text-xs text-muted-foreground mb-4 text-center">{match.date}</p>
+                <p className="text-sm text-black font-bold mb-4 text-center">{match.date}</p>
 
                 <ul className="space-y-2 flex-1">
                   {features.map((f, j) => (
