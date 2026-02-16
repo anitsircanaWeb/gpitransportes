@@ -36,7 +36,7 @@ const WorldCup = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span className="font-semibold text-sm">Estadio Akron</span>
+                    <span className="font-semibold text-sm">Estadio Guadalajara</span>
                   </div>
                   <span className="text-xs bg-red-600 text-white px-2 py-0.5 rounded font-semibold">{match.time}</span>
                 </div>
