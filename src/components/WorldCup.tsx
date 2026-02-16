@@ -43,15 +43,15 @@ const WorldCup = () => {
               </div>
 
               <div className="p-5 flex-1 flex flex-col">
-                <div className="flex items-center justify-center gap-3 mb-2 flex-wrap">
-                  <div className="flex items-center gap-2">
-                    {match.flag1 && <img src={`https://flagcdn.com/w40/${match.flag1}.png`} alt={match.team1} className="w-8 h-5 object-cover rounded-sm" />}
-                    <span className="text-xl md:text-2xl font-heading font-bold text-orange-500">{match.team1}</span>
+                <div className="flex items-center justify-center gap-4 mb-2">
+                  <div className="flex flex-col items-center gap-1">
+                    {match.flag1 && <img src={`https://flagcdn.com/w40/${match.flag1}.png`} alt={match.team1} className="w-10 h-7 object-cover rounded-sm" />}
+                    <span className="text-lg md:text-xl font-heading font-bold text-orange-500">{match.team1}</span>
                   </div>
                   <span className="text-sm font-semibold text-orange-500">vs</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl md:text-2xl font-heading font-bold text-orange-500">{match.team2}</span>
-                    {match.flag2 && <img src={`https://flagcdn.com/w40/${match.flag2}.png`} alt={match.team2} className="w-8 h-5 object-cover rounded-sm" />}
+                  <div className="flex flex-col items-center gap-1">
+                    {match.flag2 && <img src={`https://flagcdn.com/w40/${match.flag2}.png`} alt={match.team2} className="w-10 h-7 object-cover rounded-sm" />}
+                    <span className="text-lg md:text-xl font-heading font-bold text-orange-500">{match.team2}</span>
                   </div>
                 </div>
                 <p className="text-sm text-black font-bold mb-4 text-center">{match.date}</p>
