@@ -32,11 +32,10 @@ const WorldCup = () => {
               className="bg-card rounded-xl border border-border overflow-hidden hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col"
             >
               <div className="gradient-orange p-6 text-primary-foreground">
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5" />
-                  <span className="font-semibold text-lg">{pkg.city}</span>
+                  <span className="font-semibold text-lg">Traslado a Estadio Akron</span>
                 </div>
-                <p className="text-primary-foreground/80 text-sm">{pkg.stadium}</p>
               </div>
 
               <div className="p-6 flex-1 flex flex-col">
