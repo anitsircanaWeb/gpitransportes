@@ -38,7 +38,7 @@ const WorldCup = () => {
                     <MapPin className="w-4 h-4" />
                     <span className="font-semibold text-sm">Estadio Akron</span>
                   </div>
-                  <span className="text-xs bg-primary-foreground/20 px-2 py-0.5 rounded">{match.time}</span>
+                  <span className="text-xs bg-red-600 text-white px-2 py-0.5 rounded font-semibold">{match.time}</span>
                 </div>
               </div>
 
