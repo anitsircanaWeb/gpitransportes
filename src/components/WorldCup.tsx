@@ -1,10 +1,10 @@
 import { Trophy, MapPin, Users, Clock } from "lucide-react";
 
 const matches = [
-  { date: "Jueves 11 de junio", time: "8:00 PM", team1: "🇰🇷 Corea del Sur", team2: "Repechaje UEFA 🏳️" },
-  { date: "Miércoles 18 de junio", time: "7:00 PM", team1: "🇲🇽 México", team2: "Corea del Sur 🇰🇷" },
-  { date: "Martes 23 de junio", time: "8:00 PM", team1: "🇨🇴 Colombia", team2: "Repechaje Intercontinental 🏳️" },
-  { date: "Viernes 26 de junio", time: "6:00 PM", team1: "🇺🇾 Uruguay", team2: "España 🇪🇸" },
+  { date: "Jueves 11 de junio", time: "8:00 PM", team1: "Corea del Sur", flag1: "kr", team2: "Repechaje UEFA", flag2: "" },
+  { date: "Miércoles 18 de junio", time: "7:00 PM", team1: "México", flag1: "mx", team2: "Corea del Sur", flag2: "kr" },
+  { date: "Martes 23 de junio", time: "8:00 PM", team1: "Colombia", flag1: "co", team2: "Repechaje Intercontinental", flag2: "" },
+  { date: "Viernes 26 de junio", time: "6:00 PM", team1: "Uruguay", flag1: "uy", team2: "España", flag2: "es" },
 ];
 
 const features = ["Traslado redondo al estadio", "Capacidad hasta 20 pasajeros", "Aire acondicionado", "Salida desde punto acordado", "Paradas intermedias incluidas", "Conductor bilingüe disponible"];
@@ -43,10 +43,16 @@ const WorldCup = () => {
               </div>
 
               <div className="p-5 flex-1 flex flex-col">
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <span className="text-xl md:text-2xl font-heading font-bold text-orange-500">{match.team1}</span>
+                <div className="flex items-center justify-center gap-3 mb-2 flex-wrap">
+                  <div className="flex items-center gap-2">
+                    {match.flag1 && <img src={`https://flagcdn.com/w40/${match.flag1}.png`} alt={match.team1} className="w-8 h-5 object-cover rounded-sm" />}
+                    <span className="text-xl md:text-2xl font-heading font-bold text-orange-500">{match.team1}</span>
+                  </div>
                   <span className="text-sm font-semibold text-orange-500">vs</span>
-                  <span className="text-xl md:text-2xl font-heading font-bold text-orange-500">{match.team2}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xl md:text-2xl font-heading font-bold text-orange-500">{match.team2}</span>
+                    {match.flag2 && <img src={`https://flagcdn.com/w40/${match.flag2}.png`} alt={match.team2} className="w-8 h-5 object-cover rounded-sm" />}
+                  </div>
                 </div>
                 <p className="text-sm text-black font-bold mb-4 text-center">{match.date}</p>
 
