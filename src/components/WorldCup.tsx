@@ -1,4 +1,5 @@
 import { Trophy, MapPin, Users, Clock } from "lucide-react";
+import fifaLogo from "@/assets/fifa-wc-2026.png";
 
 const matches = [
   { date: "Jueves 11 de junio", time: "8:00 PM", team1: "Corea del Sur", flag1: "kr", team2: "Repechaje UEFA", flag2: "" },
@@ -18,9 +19,12 @@ const WorldCup = () => {
             <Trophy className="w-4 h-4" />
             Mundial 2026
           </div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-secondary-foreground">
-            Traslados Mundialistas
-          </h2>
+          <div className="flex items-center justify-center gap-4">
+            <img src={fifaLogo} alt="FIFA World Cup 2026" className="h-16 md:h-20 w-auto" />
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-secondary-foreground">
+              Traslados Mundialistas
+            </h2>
+          </div>
           <p className="text-secondary-foreground/70 mt-4 max-w-2xl mx-auto">
             Llega a los partidos del Mundial 2026 en Guadalajara con comodidad y seguridad. Paquetes de transporte grupal a las sedes oficiales.
           </p>
