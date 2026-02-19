@@ -88,7 +88,7 @@ const WorldCup = () => {
         <div className="mt-12 flex flex-wrap justify-center gap-8 text-secondary-foreground/60 text-sm">
           <div className="flex items-center gap-2">
             <Users className="w-4 h-4" />
-            Grupos de 6 a 40 personas
+            Grupos de 6 a 20 personas
           </div>
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4" />
