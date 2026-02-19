@@ -8,7 +8,7 @@ const matches = [
   { date: "Viernes 26 de junio", time: "6:00 PM", team1: "Uruguay", flag1: "uy", team2: "España", flag2: "es" },
 ];
 
-const features = ["Traslado redondo al estadio", "Capacidad hasta 20 pasajeros", "Aire acondicionado", "Salida desde punto acordado", "Paradas intermedias incluidas", "Conductor bilingüe disponible"];
+const features = ["Traslado redondo al estadio", "Capacidad de 16 a 20 pasajeros", "Aire acondicionado", "Salida desde punto acordado", "Paradas intermedias incluidas", "Conductor bilingüe disponible"];
 
 const WorldCup = () => {
   return (
